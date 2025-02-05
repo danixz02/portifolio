@@ -1,7 +1,13 @@
 function toggleMenu() {
-    const menu = document.querySelector('.menu-ul-menu-hamburguer');
-    menu.classList.toggle('active');
-  }
+  const menu = document.querySelector('.menu-ul-menu-hamburguer');
+  const sound = document.getElementById("clickSound");
+
+  menu.classList.toggle('active');
+  
+  // Toca o som e garante que reinicie ao clicar
+  sound.currentTime = 0;
+  sound.play();
+}
 
   document.getElementById("download-btn").addEventListener("click", function() {
     // Criar um link temporário
