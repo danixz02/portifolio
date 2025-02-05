@@ -550,6 +550,11 @@ a {
     font-size: 10px;
   }
 
+  .tags {
+    align-items: start;
+    align-items: flex-start;
+    gap: 5px;
+  }
 
   .services {
     margin: 56px 24px 0;
