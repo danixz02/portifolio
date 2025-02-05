@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="menu">
+      <h1>Portfólio</h1>
+      <button onclick="toggleMenu()">
+        <img src="./assets/menu hamburguer.svg" />
+      </button>
+      <ul class="menu-ul">
+        <li>
+          <a href="#about-me">Sobre mim</a>
+        </li>
+        <li>
+          <a href="#projects">Projetos</a>
+        </li>
+        <li>
+          <a href="#services">Serviços</a>
+        </li>
+        <li>
+          <a href="#skills">Minhas skills</a>
+        </li>
+      </ul>
+
+      <ul class="menu-ul-menu-hamburguer">
+        <li>
+          <a href="#about-me">Sobre mim</a>
+        </li>
+        <li>
+          <a href="#projects">Projetos</a>
+        </li>
+        <li>
+          <a href="#services">Serviços</a>
+        </li>
+        <li>
+          <a href="#skills">Minhas skills</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main">
+      <div class="left">
+        <h1>Olá, eu sou o Daniel👋</h1>
+        <p>Desenvolvedor Front-End & Designer</p>
+        <div class="buttons">
+          <button class="download" id="download-btn">Download CV</button>
+          <button class="contato" id="contact-btn" onclick="toggleMenu()">Entrar em contato</button>
+        </div>
+      </div>
+      <div class="right">
+        <img src="./assets/main.svg" alt="Main Image" />
+      </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+      <h1>Sobre mim</h1>
+      <p class="sobremim">
+        Estou constantemente buscando aprimorar minhas habilidades na área da
+        programação. Meu foco é me tornar um desenvolvedor web, criando soluções
+        eficientes. Meu objetivo é desenvolver sites que não apenas atendam às
+        necessidades dos usuários, mas também proporcionem experiências
+        funcionais e de alto impacto.
+      </p>
+
+      <div class="icons">
+        <div class="smile">
+          <img src="./assets/smile.svg" />
+          <h1>Meu nome</h1>
+          <p>Daniel Friedrich</p>
+        </div>
+        <div class="email">
+          <img src="./assets/mail.svg" />
+          <h1>E-mail</h1>
+          <p>danielfriedrichm@gmail.com</p>
+        </div>
+        <div class="insta">
+          <img src="./assets/instagram.svg" />
+          <h1>Instagram</h1>
+          <a href=""></a>
+          <a href="https://www.instagram.com/danielfriedrich_/">
+            @danielfriedrich_
+          </a>
+        </div>
+        <div class="phone">
+          <img src="./assets/phone.svg" />
+          <h1>Telefone</h1>
+          <p>(27) 99589-2136</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h1>Projetos</h1>
+      <div class="projects-boxes">
+        <div class="box">
+          <img src="./assets/projeto01.png" />
+          <h1>Bruna e Ronaldo</h1>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+            <span class="tag">Booatstrap</span>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/projeto02.png" />
+          <h1>Soft Coffee</h1>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/projeto03.png" />
+          <h1>2º Encontro Técnico da Cultura do Café</h1>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h1>Serviços</h1>
+      <div class="services-boxes">
+        <div class="box">
+          <img src="./assets/code.svg" />
+          <h1>Criação de sites</h1>
+          <div class="bottom"></div>
+        </div>
+        <div class="box">
+          <img src="./assets/figma.svg" />
+          <h1>UI Designer</h1>
+          <div class="bottom"></div>
+        </div>
+        <div class="box">
+          <img src="./assets/smartphone.svg" />
+          <h1>Sites responsivos</h1>
+          <div class="bottom"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills"''>
+      <h1>Minhas Skills</h1>
+      <div class="skills-boxes">
+        <div class="box">
+          <img src="./assets/html.svg" />
+        </div>
+        <div class="box">
+          <img src="./assets/css.svg" />
+        </div>
+        <div class="box">
+          <img src="./assets/js.svg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <h1>
+        Orgulhosamente feito por
+        <span>Daniel Friedrich</span>
+      </h1>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
