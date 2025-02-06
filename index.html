@@ -6,6 +6,7 @@
     <title>Daniel Friedrich - Portfólio</title>
     <link rel="stylesheet" href="./src/styles/style.css"/>
     <link rel="stylesheet" href="./src/styles/responsive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <section class="menu">
@@ -50,7 +51,7 @@
         <p>Desenvolvedor Front-End & Designer</p>
         <div class="buttons">
           <button class="download" id="download-btn">Download CV</button>
-          <button class="contato" id="contact-btn" onclick="toggleMenu()">Entrar em contato</button>
+          <button class="contato" id="contact-btn">Entrar em contato</button>
         </div>
       </div>
       <div class="right">
@@ -101,13 +102,23 @@
         <div class="box">
           <img src="./assets/projeto01.png" />
           <h1>Bruna e Ronaldo</h1>
+
           <div class="tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
             <span class="tag">JS</span>
-            <span class="tag">Booatstrap</span>
+            <span class="tag">BOOTSTRAP</span>
+          </div>
+
+          <div class="buttons">
+            <a href="https://github.com/danixz02/Bruna-e-Ronaldo" target="_blank"
+            class="github" id="github-btn"><i class="fa-brands fa-square-github"></i>GitHub</a>
+
+            <a href="https://danixz02.github.io/Bruna-e-Ronaldo/" target="_blank" 
+            class="site"><i class="fa-solid fa-rocket"></i>Site</a>
           </div>
         </div>
+
         <div class="box">
           <img src="./assets/projeto02.png" />
           <h1>Soft Coffee</h1>
@@ -116,14 +127,31 @@
             <span class="tag">CSS</span>
             <span class="tag">JS</span>
           </div>
+
+          <div class="buttons">
+            <a href="https://github.com/danixz02/soft-Coffee" target="_blank"
+            class="github" id="github-btn"><i class="fa-brands fa-square-github"></i>GitHub</a>
+
+            <a href="https://danixz02.github.io/soft-Coffee/" target="_blank" 
+            class="site"><i class="fa-solid fa-rocket"></i>Site</a>
+          </div>
         </div>
+        
         <div class="box">
           <img src="./assets/projeto03.png" />
-          <h1>2º Encontro Técnico da Cultura do Café</h1>
+          <h1>Encontro Técnico <p style="display: inline-flex;">- Conta secundária</p></h1>
           <div class="tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
-            <span class="tag">JS</span>
+            <span class="tag">BOOTSTRAP</span>
+          </div>
+
+          <div class="buttons">
+            <a href="https://github.com/vbaaqmoisoixx/coffee-event/tree/main" target="_blank"
+            class="github" id="github-btn"><i class="fa-brands fa-square-github"></i>GitHub</a>
+
+            <a href="https://eventcoffee.vercel.app/" target="_blank" 
+            class="site"><i class="fa-solid fa-rocket"></i>Site</a>
           </div>
         </div>
       </div>
@@ -172,6 +200,6 @@
       </h1>
     </section>
 
-    <script src="./scripts/script.js"></script>
+    <script src="./src/scripts/script.js"></script>
   </body>
 </html>

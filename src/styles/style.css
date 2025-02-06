@@ -243,7 +243,10 @@ a {
 }
 
 .projects .projects-boxes .box {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  height: 310px;
   background: #212121;
   padding: 20px 25px;
   border-radius: 10px;
@@ -269,11 +272,42 @@ a {
   color: var(--text-secondary);
 }
 
-.box:hover {
-  transform: translateZ(0) scale(1.05);
-  border: 1px solid var(--brand-color);
-  background: #2a2a2a;
+
+.projects .projects-boxes .box .buttons {
+  display: flex;
+  width: 100%;
+  margin-top: 9px;
+  padding: 10px 0 0;
+  gap: 4px;
 }
+
+.github,
+.site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.1rem;
+  color: var(--brand-color);
+  border: 1px solid var(--brand-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.github:hover,
+.site:hover {
+  transition: .3s;
+  background: var(--brand-color);
+  color: var(--bg);
+}
+
+.github i,
+.site  i {
+  margin: 0 10px 0 0;
+}
+
+
 
 .services {
   display: grid;
