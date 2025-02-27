@@ -262,8 +262,10 @@
     }
   
     .skills .skills-boxes {
+      text-align: center;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 21px;
+      margin: 0 24px;
+      gap: 12px;
     }
   
     .skills .skills-boxes .box {
