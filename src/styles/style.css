@@ -11,16 +11,16 @@
 
 /* Para navegadores Webkit (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 1px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00df5e;
+  background: var(--brand-color);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00b94e;
+  background: hsl(274, 87%, 76%)
 }
 
 html {
@@ -33,7 +33,6 @@ html {
   --text-secondary: #828282;
   --bg: #171717;
 }
-
 body {
   font-family: "DM Sans", sans-serif;
   color: var(--text);
@@ -127,15 +126,17 @@ a {
 }
 
 .main .left .buttons .download {
-  background: var(--brand-color);
-  border: none;
-  color: var(--bg);
+  background: none;
+  border: 1px solid var(--brand-color);
+  color: var(--text);
   font-size: 14px;
   font-weight: 600;
 }
 
 .main .left .buttons .download:hover {
-  background: #01ff6b;
+  color: var(--text);
+  transition: .3s;
+  background-color: var(--brand-color);
 }
 
 .main .left .buttons .contato {
@@ -151,15 +152,15 @@ a {
 }
 
 .main .right img {
-  width: 300px;
-  height: 254.47px;
+  width: 360px;
+  height: 259px;
 }
 
 .about-me {
   display: grid;
   align-items: center;
   justify-items: center;
-  margin: 160px 150px 0;
+  margin: 160px 14px 0;
   text-align: center;
 }
 
@@ -250,6 +251,12 @@ a {
   background: #212121;
   padding: 20px 25px;
   border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.projects-boxes > .box:hover {
+  transition: .3s;
+  border: 1px solid var(--brand-color);
 }
 
 .projects .projects-boxes .box img {
@@ -306,8 +313,6 @@ a {
 .site  i {
   margin: 0 10px 0 0;
 }
-
-
 
 .services {
   display: grid;
@@ -366,8 +371,12 @@ a {
 }
 
 .skills .skills-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
 }
 
@@ -399,4 +408,12 @@ a {
 
 .final span {
   color: var(--brand-color);
+}
+
+
+.infoSkills {
+  display: flex;
+  justify-content: center;
+  color: #575757;
+  margin-top: 14px;
 }
