@@ -66,6 +66,7 @@
   
     .menu-ul-menu-hamburguer.active {
       display: flex;
+      z-index: 1;
       flex-direction: column;
       text-align: center;
       animation-name: identifier;
