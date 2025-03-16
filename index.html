@@ -6,6 +6,7 @@
     <title>Daniel Friedrich - Portfólio</title>
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="stylesheet" href="./src/styles/responsive.css" />
+    <link rel="stylesheet" href="./src/styles/animations.css" />
     <link rel="stylesheet" href="./src/styles/footer.css" />
     <link
       rel="stylesheet"
@@ -22,38 +23,22 @@
         <img src="./assets/menu hamburguer.svg" />
       </button>
       <ul class="menu-ul">
-        <li>
-          <a href="#about-me">Sobre mim</a>
-        </li>
-        <li>
-          <a href="#projects">Projetos</a>
-        </li>
-        <li>
-          <a href="#skills">Minhas skills</a>
-        </li>
-        <li>
-          <a href="#contato">Contato</a>
-        </li>
+        <li><a href="#about-me">Sobre mim</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#skills">Minhas skills</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
 
       <ul class="menu-ul-menu-hamburguer">
-        <li>
-          <a href="#about-me">Sobre mim</a>
-        </li>
-        <li>
-          <a href="#projects">Projetos</a>
-        </li>
-        <li>
-          <a href="#skills">Minhas skills</a>
-        </li>
-        <li>
-          <a href="#contato">Contato</a>
-        </li>
+        <li><a href="#about-me">Sobre mim</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#skills">Minhas skills</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </section>
 
-    <section class="main">
-      <div class="left">
+    <section class="main hidden">
+      <div class="left hidden">
         <h1>Olá, eu sou o Daniel👋</h1>
         <p>Desenvolvedor Front-End & Designer</p>
         <div class="buttons">
@@ -61,14 +46,15 @@
           <button class="contato" id="contact-btn">Entrar em contato</button>
         </div>
       </div>
-      <div class="right">
+
+      <div class="right hidden">
         <img src="./assets/main.svg" alt="Main Image" />
       </div>
     </section>
 
-    <section class="about-me" id="about-me">
-      <h1>Sobre mim</h1>
-      <p class="sobremim">
+    <section class="about-me hidden" id="about-me">
+      <h1 class="hidden">Sobre mim</h1>
+      <p class="sobremim hidden">
         Estou constantemente buscando aprimorar minhas habilidades na área da
         programação. Meu foco é me tornar um desenvolvedor web, criando soluções
         eficientes. Meu objetivo é desenvolver sites que não apenas atendam às
@@ -76,26 +62,26 @@
         funcionais e de alto impacto.
       </p>
 
-      <div class="icons">
-        <div class="smile">
+      <div class="icons hidden">
+        <div class="smile hidden">
           <img src="./assets/smile.svg" />
           <h1>Meu nome</h1>
           <p>Daniel Friedrich</p>
         </div>
-        <div class="email">
+
+        <div class="email hidden">
           <img src="./assets/mail.svg" />
           <h1>E-mail</h1>
           <p>danielfriedrichm@gmail.com</p>
         </div>
-        <div class="insta">
+
+        <div class="insta hidden">
           <img src="./assets/linkedin.svg" style="width: 64px; height: 64px" />
           <h1>Linkedin</h1>
-          <a href=""></a>
-          <a href="https://www.linkedin.com/in/daniel-friedrich-de-moura/">
-            Acessar Linkedin
-          </a>
+          <a href="https://www.linkedin.com/in/daniel-friedrich-de-moura/">Acessar Linkedin</a>
         </div>
-        <div class="phone">
+
+        <div class="phone hidden">
           <img src="./assets/phone.svg" />
           <h1>Telefone</h1>
           <p>(27) 99589-2136</p>
@@ -103,15 +89,12 @@
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects hidden" id="projects">
       <h1>Projetos</h1>
       <div class="projects-boxes">
-        <div class="box">
+        <div class="box hidden">
           <img src="./assets/projeto05.png" />
-          <h1>
-            Cafés Moura
-            <p style="display: inline-flex"></p>
-          </h1>
+          <h1>Cafés Moura</h1>
           <div class="tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
@@ -124,7 +107,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box hidden">
           <img src="./assets/projeto01.png" />
           <h1>Bruna e Ronaldo</h1>
 
@@ -141,7 +124,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box hidden">
           <img src="./assets/projeto02.png" />
           <h1>Soft Coffee</h1>
           <div class="tags">
@@ -156,12 +139,10 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box hidden">
           <img src="./assets/projeto04.png" />
-          <h1>
-            Painel de Vagas - Nexify
-            <p style="display: inline-flex"></p>
-          </h1>
+          <h1>Painel de Vagas - Nexify</h1>
+
           <div class="tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
@@ -197,23 +178,26 @@
       </div>
     </section> -->
 
-    <section class="skills" id="skills">
+    <section class="skills hidden" id="skills">
       <h1>Minhas Skills</h1>
       <div class="skills-boxes">
-        <div class="box">
+        <div class="box hidden">
           <img src="./assets/html.svg" />
           <p class="infoSkills">HTML 5</p>
           <div class="bottom"></div>
         </div>
-        <div class="box">
+        
+        <div class="box hidden">
           <img src="./assets/css.svg" />
           <p class="infoSkills">CSS 3</p>
         </div>
-        <div class="box">
+
+        <div class="box hidden">
           <img src="./assets/js.svg" />
           <p class="infoSkills">JavaScript</p>
         </div>
-        <div class="box">
+
+        <div class="box hidden">
           <img src="./assets/figma.svg" />
           <p class="infoSkills">Figma</p>
         </div>
@@ -233,6 +217,7 @@
             <i class="fa-brands fa-linkedin"></i>
             <a href="https://www.linkedin.com/in/danielfmoura/" target="_blank">Linkedin</a>
           </li>
+
           <li>
             <i class="fa-brands fa-github"></i>
             <a href="https://github.com/danixz02" target="_blank">GitHub</a>
@@ -249,14 +234,17 @@
           <li><a href="#skills">Skills</a></li>
         </ul>
       </div>
+
       <div class="footer-right">
         <p>Vamos trabalhar juntos? Entre em contato!</p>
+
         <span class="email">
           <i class="fa-solid fa-envelope"></i>
           <a href="mailto:danielfriedrichm@gmail.com">Enviar messagem</a>
         </span>
       </div>
     </footer>
+
     <div class="footer-bottom">
       Orgulhosamente feito por <span>Daniel Friedrich</span> 2025
     </div>
@@ -264,4 +252,5 @@
 
     <script src="./src/scripts/script.js"></script>
   </body>
+  <script src="src/scripts/animations.js"></script>
 </html>

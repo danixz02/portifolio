@@ -1,0 +1,23 @@
+.hidden {
+    opacity: 0;
+    transition: 1s all;
+    transform: translateY(10%);
+}
+
+.show {
+    opacity: 1;
+    transition: 1s all;
+    transform: translateY(0%);
+}
+
+.projects-boxes :nth-child(2),.skills-boxes :nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.projects-boxes :nth-child(3), .skills-boxes :nth-child(3) {
+    transition-delay: 500ms;
+}
+
+.projects-boxes :nth-child(4), .skills-boxes :nth-child(4) {
+    transition-delay: 600ms;
+}
