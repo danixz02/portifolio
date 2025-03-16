@@ -23,3 +23,13 @@ document.getElementById("contact-btn").addEventListener("click", function() {
   window.open(url, "_blank"); // Abre em uma nova aba
 });
 
+
+console.log(`
+  %c👋 Olá, dev curioso! 
+  %c
+  Gostou do site? Vamos conversar!
+  Entre em contato: danielfriedrichm@gmail.com
+  
+  `, 
+  'font-size: 20px; font-weight: bold;',
+  'font-size: 16px;');

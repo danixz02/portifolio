@@ -23,6 +23,12 @@
   }
   
   @media (max-width: 900px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .menu {
       width: 100%;
       padding: 24px 24px 24px;
@@ -109,7 +115,7 @@
     }
   
     .main .left h1 {
-      width: 60%;
+      width: 100%;
       font-size: 24px;
       text-align: center;
       margin: 0 0 8px;
@@ -196,7 +202,7 @@
   
     .projects .projects-boxes .box {
       width: 100%;
-      height: 280px;
+      height: 315px;
       padding: 15px 20px;
     }
   
@@ -209,11 +215,19 @@
     .projects .projects-boxes .box h1 {
       word-wrap: break-word;
       overflow-wrap: break-word;
-      font-size: 13px;
+      font-size: 22px;
       margin: 0 0 4px;
     }
   
     .projects .projects-boxes .box p {
+      font-size: 10px;
+    }
+
+    .projects .projects-boxes .box .buttons {
+      margin-top: 2rem;
+    }
+
+    .tag {
       font-size: 10px;
     }
   
@@ -262,7 +276,11 @@
     }
   
     .skills .skills-boxes {
-      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
       grid-template-columns: 1fr 1fr 1fr;
       margin: 0 24px;
       gap: 12px;
@@ -272,20 +290,13 @@
       padding: 21px;
       background: #212121;
       border-radius: 10px;
+      justify-items: center;
+      width: 100px;
     }
   
     .skills .skills-boxes .box img {
       width: 48px;
       height: 48px;
-    }
-  
-    .final {
-      margin: 56px 0 0;
-      padding: 12px 0;
-    }
-  
-    .final h1 {
-      font-size: 12px;
     }
   }
   
