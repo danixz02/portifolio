@@ -21,3 +21,6 @@
 .projects-boxes :nth-child(4), .skills-boxes :nth-child(4) {
     transition-delay: 600ms;
 }
+.projects-boxes :nth-child(5) {
+    transition-delay: 800ms;
+}
