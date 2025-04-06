@@ -10,17 +10,17 @@
     transform: translateY(0%);
 }
 
-.projects-boxes :nth-child(2),.skills-boxes :nth-child(2) {
+.projects > .boxes :nth-child(2),.skills-boxes :nth-child(2) {
     transition-delay: 300ms;
 }
 
-.projects-boxes :nth-child(3), .skills-boxes :nth-child(3) {
+.projects > .boxes :nth-child(3), .skills-boxes :nth-child(3) {
     transition-delay: 500ms;
 }
 
-.projects-boxes :nth-child(4), .skills-boxes :nth-child(4) {
+.projects > .boxes :nth-child(4), .skills-boxes :nth-child(4) {
     transition-delay: 600ms;
 }
-.projects-boxes :nth-child(5) {
+.projects > .boxes :nth-child(5) {
     transition-delay: 800ms;
 }
